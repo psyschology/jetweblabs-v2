@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions | Jetweb Labs</title>
+
+    <link rel="icon" type="image/png" href="assets/img/jetweb-logo.png">
+    <link rel="apple-touch-icon" href="assets/img/jetweb-logo.png">
+
+    <meta name="description" content="Please review the Terms and Conditions for using Jetweb Labs services.">
+    <meta name="robots" content="noindex, follow"> <link rel="canonical" href="https://www.jetweblabs.in/terms.html"> 
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jetweblabs.in/terms.html">
+    <meta property="og:title" content="Terms and Conditions | Jetweb Labs">
+    <meta property="og:description" content="Terms of service for Jetweb Labs web development and digital strategy.">
+    <meta property="og:image" content="assets/img/jetweb-logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.jetweblabs.in/terms.html">
+    <meta name="twitter:title" content="Terms and Conditions | Jetweb Labs">
+    <meta name="twitter:description" content="Terms of service for Jetweb Labs web development and digital strategy.">
+    <meta name="twitter:image" content="assets/img/jetweb-logo.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <style>
+        /* CSS Variables for Theming */
+        :root {
+            --primary-color: #007bff;
+            --accent-color: #ffc107;
+            --background-color: #ffffff;
+            --surface-color: #f8f9fa;
+            --text-color: #343a40;
+            --heading-color: #1a202c;
+            --border-color: #e2e8f0;
+            --white: #fff;
+            --whatsapp-color: #25D366;
+            --font-main: 'Inter', sans-serif;
+            --font-heading: 'Poppins', sans-serif;
+            --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        [data-theme="dark"] {
+            --primary-color: #007bff;
+            --accent-color: #ffc107;
+            --background-color: #0d1117;
+            --surface-color: #161b22;
+            --text-color: #c9d1d9;
+            --heading-color: #ffffff;
+            --border-color: #30363d;
+        }
+
+        /* Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: var(--font-main); 
+            background-color: var(--background-color); 
+            color: var(--text-color); 
+            transition: background-color 0.3s, color 0.3s; 
+            line-height: 1.7; 
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        /* Adjusted section padding for a sub-page */
+        section.page-content { padding: 60px 0; } 
+        /* Kept your original page styles in case they are needed by JS */
+        section.page { padding: 80px 0; display: none; }
+        section.page.active { display: block; animation: fadeIn 0.6s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Typography & Buttons */
+        h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); color: var(--heading-color); line-height: 1.3; margin-bottom: 0.75em; }
+        h1 { font-size: 3.5rem; font-weight: 800; }
+        h2 { font-size: 2.5rem; font-weight: 700; margin-top: 1.5em; }
+        h3 { font-size: 1.75rem; font-weight: 600; margin-top: 1.5em; }
+        p, ul, ol { margin-bottom: 1.5em; }
+        ul, ol { padding-left: 25px; }
+        li { margin-bottom: 0.5em; }
+
+        .section-title { text-align: center; margin-bottom: 20px; }
+        .section-subtitle { font-size: 1.125rem; color: var(--text-color); max-width: 48rem; margin: 0 auto 40px; text-align: center; }
+        .btn { padding: 12px 28px; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; display: inline-block; border: 2px solid transparent; font-family: var(--font-heading); cursor: pointer; text-align: center; }
+        .btn-primary { background-color: var(--primary-color); color: var(--white); }
+        .btn-primary:hover { background-color: #0069d9; transform: translateY(-3px); box-shadow: var(--shadow-md); }
+        .btn-secondary { background-color: transparent; color: var(--primary-color); border-color: var(--primary-color); }
+        .btn-secondary:hover { background-color: var(--primary-color); color: var(--white); }
+        
+        /* Preloader */
+        #preloader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #0d1117; display: flex; justify-content: center; align-items: center; z-index: 9999; transition: opacity 0.8s ease-in-out; }
+        #preloader img { width: 150px; animation: pulse 1.5s infinite ease-in-out; }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+
+        /* Header & Navigation */
+        .main-header { background-color: var(--background-color); border-bottom: 1px solid var(--border-color); padding: 15px 0; position: sticky; top: 0; z-index: 1000; transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; }
+        .main-header.scrolled { box-shadow: var(--shadow-md); }
+        .main-header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { height: 50px; }
+        .nav-links { list-style: none; display: flex; gap: 30px; }
+        .nav-links a { text-decoration: none; color: var(--text-color); font-weight: 600; transition: color 0.2s; position: relative; padding-bottom: 5px; font-family: var(--font-heading); }
+        .nav-links a::after { content: ''; position: absolute; width: 0; height: 3px; bottom: 0; left: 0; background-color: var(--primary-color); transition: width 0.3s; border-radius: 2px; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary-color); }
+        .nav-links a.active::after { width: 100%; }
+        .header-actions { display: flex; align-items: center; gap: 20px; }
+        .theme-switch-container { display: flex; align-items: center; gap: 8px; color: var(--text-color); }
+        .theme-switch { position: relative; display: inline-block; width: 50px; height: 26px; }
+        .theme-switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 26px; }
+        .slider:before { position: absolute; content: ""; height: 20px; width: 20px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
+        input:checked + .slider { background-color: var(--primary-color); }
+        input:checked + .slider:before { transform: translateX(24px); }
+        .hamburger { display: none; font-size: 1.5rem; background: none; border: none; color: var(--text-color); cursor: pointer; }
+
+        /* Sidebar (Mobile Menu) */
+        .sidebar { position: fixed; top: 0; right: -280px; width: 280px; height: 100%; background-color: var(--surface-color); box-shadow: -5px 0 15px rgba(0,0,0,0.1); transition: right 0.3s ease-in-out; z-index: 1001; padding: 20px; }
+        .sidebar.open { right: 0; }
+        .sidebar ul { list-style: none; margin-top: 40px; }
+        .sidebar ul li a { display: block; padding: 15px; text-decoration: none; color: var(--text-color); font-size: 1.1rem; border-radius: 5px; font-family: var(--font-heading); }
+        .sidebar ul li a:hover { background-color: var(--border-color); }
+        .close-btn { position: absolute; top: 15px; right: 20px; font-size: 2.5rem; background: none; border: none; color: var(--text-color); cursor: pointer; }
+
+        /* Styles for this specific Terms/Privacy page */
+        .page-header { text-align: center; margin-bottom: 60px; padding-top: 60px; }
+        .page-header h1 { font-size: 3rem; }
+        .page-header p { font-size: 1.1rem; color: var(--text-color); margin-top: 10px; }
+
+        .legal-content {
+            max-width: 800px; /* Makes long text easier to read */
+            margin: 0 auto;
+            background: var(--surface-color);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+        .legal-content h2 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+        .legal-content strong {
+            color: var(--heading-color);
+        }
+
+        /* Footer */
+        .main-footer { background-color: var(--surface-color); padding: 60px 0 20px 0; border-top: 1px solid var(--border-color); margin-top: 80px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 30px; margin-bottom: 40px; }
+        .footer-about .logo { margin-bottom: 15px; }
+        .footer-links h4 { margin-bottom: 15px; }
+        .footer-links ul { list-style: none; padding-left: 0; }
+        .footer-links ul li a { text-decoration: none; color: var(--text-color); margin-bottom: 10px; display: block; transition: color 0.3s; }
+        .footer-links ul li a:hover { color: var(--primary-color); }
+        .social-icons { display: flex; gap: 15px; margin-top: 15px; }
+        .social-icons a { font-size: 1.5rem; color: var(--text-color); transition: color 0.3s, transform 0.3s; }
+        .social-icons a:hover { color: var(--primary-color); transform: scale(1.1); }
+        .footer-bottom { text-align: center; border-top: 1px solid var(--border-color); padding-top: 20px; font-size: 0.9rem; }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: var(--whatsapp-color); color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 6px rgba(0,0,0,0.25); z-index: 100; transition: transform 0.3s ease; }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        .whatsapp-float i { margin-top: 15px; }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            h1 { font-size: 2.8rem; }
+            h2 { font-size: 2.2rem; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .legal-content { padding: 30px; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hamburger { display: block; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .whatsapp-float { width: 50px; height: 50px; bottom: 20px; right: 20px; font-size: 24px; }
+            .whatsapp-float i { margin-top: 13px; }
+            .page-header { padding-top: 40px; margin-bottom: 40px; }
+            .legal-content { padding: 20px; }
+        }
+        /* Your other styles from the original file... */
+        /* Note: I've removed many styles that only apply to the homepage sections to keep this file cleaner */
+    </style>
+</head>
+<body>
+
+    <div id="preloader">
+        <img src="assets/img/jetweb-logo.png" alt="Jetweb Labs Loading...">
+    </div>
+
+    <header class="main-header" id="main-header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/jetweb-logo.png" alt="Jetweb Labs Logo" class="logo">
+            </a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="theme-switch-container">
+                    <i class="fas fa-sun"></i>
+                    <label class="theme-switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <i class="fas fa-moon"></i>
+                </div>
+                <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <button class="close-btn" id="close-sidebar-btn" aria-label="Close menu">&times;</button>
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="index.html#services" class="nav-link">Services</a></li>
+            <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="index.html#about" class="nav-link">About</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <section class="page-content">
+            <div class="container">
+
+                <div class="page-header">
+                    <h1>Terms and Conditions</h1>
+                    <p>Last Updated:11/05/2025</p>
+                </div>
+
+                <div class="legal-content">
+                    <p>Welcome to JetWeb Labs ("we", "our", "us"). By accessing or using our website <strong>[Insert Website URL]</strong>, and engaging with our services (including Website Development, Ecommerce Development, Software Development, and Marketing and Branding), you agree to comply with and be bound by the following terms and conditions ("Terms"). Please read these Terms carefully before using our services.</p>
+
+                    <h2>1. Services Provided</h2>
+                    <p>JetWeb Labs provides the following services:</p>
+                    <ul>
+                        <li><strong>Website Development:</strong> Custom website design and development, including front-end and back-end development, user experience (UX) and user interface (UI) design, and CMS integration.</li>
+                        <li><strong>Ecommerce Development:</strong> Building and customizing online stores, integrating payment gateways, and providing maintenance and support for ecommerce platforms.</li>
+                        <li><strong>Software Development:</strong> Custom software solutions tailored to meet your specific business needs, including web and mobile applications.</li>
+                        <li><strong>Marketing and Branding:</strong> Digital marketing strategies, including search engine optimization (SEO), social media marketing, content marketing, and branding services.</li>
+                    </ul>
+                    <p>By engaging in these services, you agree to the following terms and conditions.</p>
+
+                    <h2>2. Project Scope and Agreement</h2>
+                    <p>Each project will be defined by a mutually agreed upon scope of work ("SOW") document, which outlines deliverables, timelines, payment terms, and other important details. This document serves as a contract for services provided.</p>
+
+                    <h2>3. Delivery Times</h2>
+                    <h3>Estimated Timeframes:</h3>
+                    <p>Delivery times for all projects (Website Development, Ecommerce Development, Software Development, and Marketing) will be provided at the start of the project, based on the project scope and requirements. We will provide an estimated timeline in the SOW, but all timelines are subject to change based on project complexity, client feedback, and external factors.</p>
+                    
+                    <h3>Delays:</h3>
+                    <p>We make every effort to meet agreed-upon delivery dates. However, delays may occur due to the following factors:</p>
+                    <ul>
+                        <li>Changes or additions to the original scope by the client.</li>
+                        <li>Delays in receiving required content or materials from the client.</li>
+                        <li>External dependencies, such as third-party services, hosting issues, or unforeseen technical complications.</li>
+                    </ul>
+                    <p>In the event of delays, we will notify the client promptly and provide a revised timeline. We are not responsible for delays caused by factors beyond our control.</p>
+
+                    <h2>4. Refund Policy</h2>
+                    <h3>Custom Development Projects:</h3>
+                    <p>For custom website, ecommerce, and software development, we typically do not offer refunds once a project has started, as work is initiated, and resources are allocated to your project. However, if a project is canceled before work begins, we will provide a full refund minus any administrative or setup fees incurred.</p>
+                    
+                    <h3>Marketing and Branding Services:</h3>
+                    <p>For marketing and branding services, refunds are not offered after the service has been rendered or marketing campaigns have commenced. If the client is dissatisfied with the initial deliverables, we will work to revise and improve the service based on client feedback. Refunds may be considered on a case-by-case basis, but are generally not offered after the commencement of the service.</p>
+                    
+                    <h3>Deposits:</h3>
+                    <p>A deposit is required before work begins on all services. The deposit is non-refundable once the project has started. For larger projects, payment terms will be outlined in the SOW, with payment made at various stages of the project.</p>
+
+                    <h2>5. Payments</h2>
+                    <h3>Payment Terms:</h3>
+                    <p>Payment terms will be outlined in the SOW, with clear instructions on due dates and amounts. Payments are typically due in installments based on milestones or project phases.</p>
+                    
+                    <h3>Late Payments:</h3>
+                    <p>If payment is not made by the due date, JetWeb Labs reserves the right to suspend work until payment is received. A late payment fee of <strong>[Insert Percentage]</strong> may be applied to overdue invoices.</p>
+
+                    <h2>6. Client Responsibilities</h2>
+                    <p>The client agrees to:</p>
+                    <ul>
+                        <li>Provide all necessary content, assets, and materials required for the project (e.g., logos, copy, images).</li>
+                        <li>Respond promptly to requests for feedback or approvals to avoid delays in the project timeline.</li>
+                        <li>Ensure that any third-party services (e.g., hosting, APIs, etc.) are properly set up and accessible.</li>
+                    </ul>
+
+                    <h2>7. Ownership and Intellectual Property</h2>
+                    <h3>Ownership:</h3>
+                    <p>Upon full payment for the project, the client will own all final deliverables produced by JetWeb Labs, including website code, designs, and other creative assets. We retain ownership of any proprietary tools, software, or technologies used during the project.</p>
+                    
+                    <h3>License:</h3>
+                    <p>If third-party software, plugins, or tools are used, the client will receive a license to use them but does not own the rights to these tools.</p>
+                    
+                    <h3>Revisions and Additional Work:</h3>
+                    <p>The client may request revisions within the agreed-upon scope. Any work beyond the scope outlined in the SOW will be billed separately at an agreed-upon hourly rate.</p>
+
+                    <h2>8. Confidentiality</h2>
+                    <p>We are committed to maintaining the confidentiality of all client information. Any proprietary information, business details, or sensitive data shared by the client will be kept confidential and will not be disclosed to third parties without prior consent, except where required by law.</p>
+
+                    <h2>9. Warranties and Disclaimers</h2>
+                    <h3>No Warranty on Third-Party Services:</h3>
+                    <p>While we strive to ensure that all services function as intended, we do not warrant that third-party services or products (e.g., hosting, plugins, software integrations) will be error-free or uninterrupted.</p>
+                    
+                    <h3>Project Accuracy:</h3>
+                    <p>We will make every effort to ensure that our work meets the specifications and requirements outlined in the SOW, but we do not guarantee the absence of bugs, errors, or issues that may arise post-launch. We provide a standard warranty period for bug fixes and technical support (typically 30 days after project completion).</p>
+
+                    <h2>10. Limitation of Liability</h2>
+                    <p>In no event will JetWeb Labs be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with the use or inability to use our services, or any third-party services or products. Our liability will be limited to the amount paid by the client for the specific service in question.</p>
+
+                    <h2>11. Termination of Services</h2>
+                    <p>Either party may terminate the project at any time with written notice. If the client terminates the project after work has begun, the client will be required to pay for all work completed up to that point, including any non-refundable deposits or fees.</p>
+
+                    <h2>12. Governing Law</h2>
+                    <p>These Terms and Conditions will be governed by and construed in accordance with the laws of <strong>[Your Jurisdiction]</strong>, and any disputes will be subject to the exclusive jurisdiction of the courts located in <strong>[Your Jurisdiction]</strong>.</p>
+
+                    <h2>13. Changes to These Terms</h2>
+                    <p>We reserve the right to update or modify these Terms and Conditions at any time. Any changes will be posted on this page with an updated revision date. We encourage you to review this page periodically for any updates.</p>
+
+                    <h2>14. Contact Information</h2>
+                    <p>If you have any questions about these Terms and Conditions, please contact us at:</p>
+                    <p>
+                        <strong>JetWeb Labs</strong><br>
+                        Kolkata, India<br>
+                        Email: support@jetweblabs.in<br>
+                        Phone: +91 82406 20015
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/918240620015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="assets/img/jetweb-logo.png" alt="Jetweb Labs Logo" class="logo">
+                    <p>Architects of the digital frontier, building exceptional web experiences.</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/jetweb-labs" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/jetweblabs" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/918240620015" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#about" class="nav-link">About Us</a></li>
+                        <li><a href="index.html#services" class="nav-link">Services</a></li>
+                        <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html#contact" class="nav-link">Contact Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="index.html#service-website" class="nav-link">Website Development</a></li>
+                        <li><a href="index.html#service-ecommerce-dev" class="nav-link">Ecommerce Development</a></li>
+                        <li><a href="index.html#service-software" class="nav-link">Software Development</a></li>
+                        <li><a href="index.html#service-marketing" class="nav-link">Marketing and Branding</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jetweb Labs. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- Preloader ---
+        const preloader = document.getElementById('preloader');
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                preloader.style.visibility = 'hidden';
+                preloader.style.transition = 'opacity 0.5s ease, visibility 0.5s ease';
+                document.body.style.overflow = 'auto';
+            }, 500); // Shorter delay for static pages
+        });
+        
+        // --- Mobile Menu (Sidebar) ---
+        const hamburger = document.getElementById('hamburger-menu');
+        const sidebar = document.getElementById('sidebar');
+        const closeBtn = document.getElementById('close-btn');
+        if (hamburger && sidebar && closeBtn) {
+            hamburger.addEventListener('click', () => sidebar.classList.add('open'));
+            closeBtn.addEventListener('click', () => sidebar.classList.remove('open'));
+            
+            const sidebarLinks = sidebar.querySelectorAll('.nav-link');
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // This will close the sidebar before navigating
+                    sidebar.classList.remove('open');
+                });
+            });
+        }
+
+         // --- Dark/Light Mode Toggle ---
+        const themeToggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        if (currentTheme === 'dark') themeToggle.checked = true;
+        
+        themeToggle.addEventListener('change', function() {
+            const theme = this.checked ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+        });
+
+        // --- Header Scroll Effect ---
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // --- Auto Scrollers ---
+        function initializeScrollers() {
+            const scrollers = document.querySelectorAll(".scroller");
+            if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                scrollers.forEach((scroller) => {
+                    scroller.setAttribute("data-animated", true);
+                    const scrollerInner = scroller.querySelector(".scroller__inner");
+                    const scrollerContent = Array.from(scrollerInner.children);
+                    scrollerContent.forEach((item) => {
+                        const duplicatedItem = item.cloneNode(true);
+                        duplicatedItem.setAttribute("aria-hidden", true);
+                        scrollerInner.appendChild(duplicatedItem);
+                    });
+                });
+            }
+        }
+        initializeScrollers();
+
+        // --- Tech Stack "Show More" ---
+        const viewMoreBtn = document.getElementById('view-more-tech-btn');
+        const hiddenStacks = document.getElementById('hidden-tech-stacks');
+        if(viewMoreBtn && hiddenStacks) {
+            viewMoreBtn.addEventListener('click', () => {
+                const isHidden = hiddenStacks.style.display === 'none' || hiddenStacks.style.display === '';
+                hiddenStacks.style.display = isHidden ? 'block' : 'none';
+                viewMoreBtn.textContent = isHidden ? 'Show Less' : 'Show More';
+            });
+        }
+
+        // --- Service Plans Tab Switching Logic ---
+        const serviceTabsContainer = document.getElementById('serviceTabs');
+        if (serviceTabsContainer) {
+            const tabButtons = serviceTabsContainer.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('#services .tab-content');
+            
+            serviceTabsContainer.addEventListener('click', (e) => {
+                const targetButton = e.target.closest('.tab-button');
+                if (targetButton) {
+                    const tab = targetButton.dataset.tab;
+                    
+                    tabButtons.forEach(button => button.classList.remove('active'));
+                    targetButton.classList.add('active');
+                    
+                    tabContents.forEach(content => {
+                        if (content.id === tab) {
+                            content.classList.remove('hidden');
+                        } else {
+                            content.classList.add('hidden');
+                        }
+                    });
+                }
+            });
+        }
+
+
+        // --- Scroll-triggered Fade-in Animations ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        function observeSections() {
+            document.querySelectorAll('.fade-in-section').forEach(section => {
+                observer.observe(section);
+            });
+        }
+        
+        const mutationObserver = new MutationObserver(observeSections);
+        mutationObserver.observe(mainContentContainer, { childList: true, subtree: true });
+        mutationObserver.observe(dynamicContentContainer, { childList: true, subtree: true });
+        observeSections(); // Initial call
+    });
+    const contactForm = document.getElementById('contact-form');
+    const modal = document.getElementById('thankYouModal');
+    const modalCloseBtn = document.getElementById('modalCloseButton');
+
+    if (contactForm && modal && modalCloseBtn) {
+        
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Stop the default redirect
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerText;
+
+            // Disable button and show "Sending..."
+            submitButton.disabled = true;
+            submitButton.innerText = "Sending...";
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Success! Show the modal and reset the form
+                    modal.classList.add('show');
+                    form.reset();
+                } else {
+                    // Error from Formspree
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            alert(data["errors"].map(error => error["message"]).join(", "));
+                        } else {
+                            alert("An unknown error occurred. Please try again.");
+                        }
+                    });
+                }
+            }).catch(error => {
+                // Network error
+                alert("An error occurred. Please check your network and try again.");
+            }).finally(() => {
+                // Re-enable the button
+                submitButton.disabled = false;
+                submitButton.innerText = originalButtonText;
+            });
+        });
+
+        // Close the modal when the "Close" button is clicked
+        modalCloseBtn.addEventListener('click', () => {
+            modal.classList.remove('show');
+        });
+
+        // Optional: Close the modal if the user clicks the background overlay
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.classList.remove('show');
+            }
+        });
+    }
+    </script>
+</body>
+</html>
